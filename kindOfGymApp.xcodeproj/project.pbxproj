@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2389A11820CEF12600F7DE7F /* SwiftGIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2389A11720CEF12600F7DE7F /* SwiftGIF.swift */; };
+		2389A11A20CEF16700F7DE7F /* LoginBackround.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2389A11920CEF16700F7DE7F /* LoginBackround.gif */; };
 		239AABA920CEAE42008D7CFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239AABA820CEAE42008D7CFD /* AppDelegate.swift */; };
 		239AABAB20CEAE42008D7CFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239AABAA20CEAE42008D7CFD /* ViewController.swift */; };
 		239AABAE20CEAE42008D7CFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239AABAC20CEAE42008D7CFD /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2389A11720CEF12600F7DE7F /* SwiftGIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGIF.swift; sourceTree = "<group>"; };
+		2389A11920CEF16700F7DE7F /* LoginBackround.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LoginBackround.gif; sourceTree = "<group>"; };
 		239AABA520CEAE42008D7CFD /* kindOfGymApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kindOfGymApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		239AABA820CEAE42008D7CFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		239AABAA20CEAE42008D7CFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				239AABAF20CEAE42008D7CFD /* Assets.xcassets */,
 				239AABB120CEAE42008D7CFD /* LaunchScreen.storyboard */,
 				239AABB420CEAE42008D7CFD /* Info.plist */,
+				2389A11720CEF12600F7DE7F /* SwiftGIF.swift */,
+				2389A11920CEF16700F7DE7F /* LoginBackround.gif */,
 			);
 			path = kindOfGymApp;
 			sourceTree = "<group>";
@@ -123,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2389A11A20CEF16700F7DE7F /* LoginBackround.gif in Resources */,
 				239AABB320CEAE42008D7CFD /* LaunchScreen.storyboard in Resources */,
 				239AABB020CEAE42008D7CFD /* Assets.xcassets in Resources */,
 				239AABAE20CEAE42008D7CFD /* Main.storyboard in Resources */,
@@ -136,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2389A11820CEF12600F7DE7F /* SwiftGIF.swift in Sources */,
 				239AABAB20CEAE42008D7CFD /* ViewController.swift in Sources */,
 				239AABA920CEAE42008D7CFD /* AppDelegate.swift in Sources */,
 			);
