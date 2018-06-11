@@ -1,0 +1,6 @@
+framework module Pods_kindOfGymApp {
+  umbrella header "Pods-kindOfGymApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

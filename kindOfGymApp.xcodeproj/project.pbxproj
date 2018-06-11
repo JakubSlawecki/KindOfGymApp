@@ -7,25 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0614B7D22FD01A8C50E9F26E /* Pods_kindOfGymApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0689008F5082105BF7C82B89 /* Pods_kindOfGymApp.framework */; };
 		2389A11820CEF12600F7DE7F /* SwiftGIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2389A11720CEF12600F7DE7F /* SwiftGIF.swift */; };
 		2389A11A20CEF16700F7DE7F /* LoginBackround.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2389A11920CEF16700F7DE7F /* LoginBackround.gif */; };
+		2389A11C20CEF7ED00F7DE7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2389A11B20CEF7ED00F7DE7F /* GoogleService-Info.plist */; };
 		239AABA920CEAE42008D7CFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239AABA820CEAE42008D7CFD /* AppDelegate.swift */; };
-		239AABAB20CEAE42008D7CFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239AABAA20CEAE42008D7CFD /* ViewController.swift */; };
+		239AABAB20CEAE42008D7CFD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239AABAA20CEAE42008D7CFD /* LoginVC.swift */; };
 		239AABAE20CEAE42008D7CFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239AABAC20CEAE42008D7CFD /* Main.storyboard */; };
 		239AABB020CEAE42008D7CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 239AABAF20CEAE42008D7CFD /* Assets.xcassets */; };
 		239AABB320CEAE42008D7CFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239AABB120CEAE42008D7CFD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0689008F5082105BF7C82B89 /* Pods_kindOfGymApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kindOfGymApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22B6FEF3CD02217FABCCA7AC /* Pods-kindOfGymApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kindOfGymApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kindOfGymApp/Pods-kindOfGymApp.debug.xcconfig"; sourceTree = "<group>"; };
 		2389A11720CEF12600F7DE7F /* SwiftGIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGIF.swift; sourceTree = "<group>"; };
 		2389A11920CEF16700F7DE7F /* LoginBackround.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LoginBackround.gif; sourceTree = "<group>"; };
+		2389A11B20CEF7ED00F7DE7F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		239AABA520CEAE42008D7CFD /* kindOfGymApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kindOfGymApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		239AABA820CEAE42008D7CFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		239AABAA20CEAE42008D7CFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		239AABAA20CEAE42008D7CFD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		239AABAD20CEAE42008D7CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		239AABAF20CEAE42008D7CFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		239AABB220CEAE42008D7CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		239AABB420CEAE42008D7CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D972FA4C0555F03495956998 /* Pods-kindOfGymApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kindOfGymApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-kindOfGymApp/Pods-kindOfGymApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0614B7D22FD01A8C50E9F26E /* Pods_kindOfGymApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2389A11D20CEFB6900F7DE7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2389A11E20CEFB7000F7DE7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2389A11F20CEFB7800F7DE7F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				239AABAA20CEAE42008D7CFD /* LoginVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		239AAB9C20CEAE42008D7CFD = {
 			isa = PBXGroup;
 			children = (
 				239AABA720CEAE42008D7CFD /* kindOfGymApp */,
 				239AABA620CEAE42008D7CFD /* Products */,
+				7DCC10E623D4E970A5040BBA /* Pods */,
+				9CC910C176A26827FA72FA2C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +89,36 @@
 		239AABA720CEAE42008D7CFD /* kindOfGymApp */ = {
 			isa = PBXGroup;
 			children = (
+				2389A11D20CEFB6900F7DE7F /* Model */,
+				2389A11F20CEFB7800F7DE7F /* Controller */,
+				2389A11E20CEFB7000F7DE7F /* View */,
 				239AABA820CEAE42008D7CFD /* AppDelegate.swift */,
-				239AABAA20CEAE42008D7CFD /* ViewController.swift */,
 				239AABAC20CEAE42008D7CFD /* Main.storyboard */,
 				239AABAF20CEAE42008D7CFD /* Assets.xcassets */,
 				239AABB120CEAE42008D7CFD /* LaunchScreen.storyboard */,
 				239AABB420CEAE42008D7CFD /* Info.plist */,
+				2389A11B20CEF7ED00F7DE7F /* GoogleService-Info.plist */,
 				2389A11720CEF12600F7DE7F /* SwiftGIF.swift */,
 				2389A11920CEF16700F7DE7F /* LoginBackround.gif */,
 			);
 			path = kindOfGymApp;
+			sourceTree = "<group>";
+		};
+		7DCC10E623D4E970A5040BBA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22B6FEF3CD02217FABCCA7AC /* Pods-kindOfGymApp.debug.xcconfig */,
+				D972FA4C0555F03495956998 /* Pods-kindOfGymApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9CC910C176A26827FA72FA2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0689008F5082105BF7C82B89 /* Pods_kindOfGymApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 239AABB720CEAE42008D7CFD /* Build configuration list for PBXNativeTarget "kindOfGymApp" */;
 			buildPhases = (
+				C734BC687500CC565204B6A8 /* [CP] Check Pods Manifest.lock */,
 				239AABA120CEAE42008D7CFD /* Sources */,
 				239AABA220CEAE42008D7CFD /* Frameworks */,
 				239AABA320CEAE42008D7CFD /* Resources */,
+				33AF94CC522E8D42B5BE6E2D /* [CP] Embed Pods Frameworks */,
+				4C93A0802326EF094F8ABF03 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +185,7 @@
 			files = (
 				2389A11A20CEF16700F7DE7F /* LoginBackround.gif in Resources */,
 				239AABB320CEAE42008D7CFD /* LaunchScreen.storyboard in Resources */,
+				2389A11C20CEF7ED00F7DE7F /* GoogleService-Info.plist in Resources */,
 				239AABB020CEAE42008D7CFD /* Assets.xcassets in Resources */,
 				239AABAE20CEAE42008D7CFD /* Main.storyboard in Resources */,
 			);
@@ -138,13 +193,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		33AF94CC522E8D42B5BE6E2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-kindOfGymApp/Pods-kindOfGymApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kindOfGymApp/Pods-kindOfGymApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C93A0802326EF094F8ABF03 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kindOfGymApp/Pods-kindOfGymApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C734BC687500CC565204B6A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kindOfGymApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		239AABA120CEAE42008D7CFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2389A11820CEF12600F7DE7F /* SwiftGIF.swift in Sources */,
-				239AABAB20CEAE42008D7CFD /* ViewController.swift in Sources */,
+				239AABAB20CEAE42008D7CFD /* LoginVC.swift in Sources */,
 				239AABA920CEAE42008D7CFD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +395,7 @@
 		};
 		239AABB820CEAE42008D7CFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22B6FEF3CD02217FABCCA7AC /* Pods-kindOfGymApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +411,7 @@
 		};
 		239AABB920CEAE42008D7CFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D972FA4C0555F03495956998 /* Pods-kindOfGymApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
