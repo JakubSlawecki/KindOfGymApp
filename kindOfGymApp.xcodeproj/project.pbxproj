@@ -11,6 +11,8 @@
 		2389A11820CEF12600F7DE7F /* SwiftGIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2389A11720CEF12600F7DE7F /* SwiftGIF.swift */; };
 		2389A11A20CEF16700F7DE7F /* LoginBackround.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2389A11920CEF16700F7DE7F /* LoginBackround.gif */; };
 		2389A11C20CEF7ED00F7DE7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2389A11B20CEF7ED00F7DE7F /* GoogleService-Info.plist */; };
+		2389A12120CF0F2400F7DE7F /* ShowSplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2389A12020CF0F2400F7DE7F /* ShowSplashScreen.swift */; };
+		2389A12320CF0FD300F7DE7F /* HiScreenBackground.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2389A12220CF0FD300F7DE7F /* HiScreenBackground.gif */; };
 		239AABA920CEAE42008D7CFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239AABA820CEAE42008D7CFD /* AppDelegate.swift */; };
 		239AABAB20CEAE42008D7CFD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239AABAA20CEAE42008D7CFD /* LoginVC.swift */; };
 		239AABAE20CEAE42008D7CFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239AABAC20CEAE42008D7CFD /* Main.storyboard */; };
@@ -24,6 +26,8 @@
 		2389A11720CEF12600F7DE7F /* SwiftGIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGIF.swift; sourceTree = "<group>"; };
 		2389A11920CEF16700F7DE7F /* LoginBackround.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LoginBackround.gif; sourceTree = "<group>"; };
 		2389A11B20CEF7ED00F7DE7F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2389A12020CF0F2400F7DE7F /* ShowSplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowSplashScreen.swift; sourceTree = "<group>"; };
+		2389A12220CF0FD300F7DE7F /* HiScreenBackground.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = HiScreenBackground.gif; sourceTree = "<group>"; };
 		239AABA520CEAE42008D7CFD /* kindOfGymApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kindOfGymApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		239AABA820CEAE42008D7CFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		239AABAA20CEAE42008D7CFD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -64,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				239AABAA20CEAE42008D7CFD /* LoginVC.swift */,
+				2389A12020CF0F2400F7DE7F /* ShowSplashScreen.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -99,6 +104,7 @@
 				239AABB420CEAE42008D7CFD /* Info.plist */,
 				2389A11B20CEF7ED00F7DE7F /* GoogleService-Info.plist */,
 				2389A11720CEF12600F7DE7F /* SwiftGIF.swift */,
+				2389A12220CF0FD300F7DE7F /* HiScreenBackground.gif */,
 				2389A11920CEF16700F7DE7F /* LoginBackround.gif */,
 			);
 			path = kindOfGymApp;
@@ -184,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2389A11A20CEF16700F7DE7F /* LoginBackround.gif in Resources */,
+				2389A12320CF0FD300F7DE7F /* HiScreenBackground.gif in Resources */,
 				239AABB320CEAE42008D7CFD /* LaunchScreen.storyboard in Resources */,
 				2389A11C20CEF7ED00F7DE7F /* GoogleService-Info.plist in Resources */,
 				239AABB020CEAE42008D7CFD /* Assets.xcassets in Resources */,
@@ -259,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2389A11820CEF12600F7DE7F /* SwiftGIF.swift in Sources */,
+				2389A12120CF0F2400F7DE7F /* ShowSplashScreen.swift in Sources */,
 				239AABAB20CEAE42008D7CFD /* LoginVC.swift in Sources */,
 				239AABA920CEAE42008D7CFD /* AppDelegate.swift in Sources */,
 			);

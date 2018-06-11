@@ -90,23 +90,35 @@
             </objects>
             <point key="canvasLocation" x="136.23188405797103" y="131.25"/>
         </scene>
-        <!--View Controller-->
+        <!--Show Splash Screen-->
         <scene sceneID="Pwv-xV-Ayc">
             <objects>
-                <viewController id="e1D-kx-cBn" sceneMemberID="viewController">
+                <viewController id="e1D-kx-cBn" customClass="ShowSplashScreen" customModule="kindOfGymApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eVF-Cb-41l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HiScreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="u6d-ow-R90">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="u6d-ow-R90" firstAttribute="trailing" secondItem="xKy-iB-7le" secondAttribute="trailing" id="MR3-pB-IsB"/>
+                            <constraint firstItem="u6d-ow-R90" firstAttribute="top" secondItem="eVF-Cb-41l" secondAttribute="top" id="ZKb-uf-wCd"/>
+                            <constraint firstItem="u6d-ow-R90" firstAttribute="leading" secondItem="xKy-iB-7le" secondAttribute="leading" id="se6-um-xdH"/>
+                            <constraint firstItem="u6d-ow-R90" firstAttribute="bottom" secondItem="xKy-iB-7le" secondAttribute="bottom" id="u9a-Lg-D9y"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xKy-iB-7le"/>
                     </view>
                     <connections>
+                        <outlet property="hiGifView" destination="u6d-ow-R90" id="nMH-f3-JJM"/>
                         <segue destination="7Zb-Ka-fee" kind="show" identifier="ShowChooseVC" id="4u5-Jk-jr2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dXF-RD-WWf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="883" y="129"/>
+            <point key="canvasLocation" x="882.60869565217399" y="128.80434782608697"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Tmw-7W-6oe">
@@ -125,6 +137,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="HiScreenBackground" width="1080" height="1920"/>
         <image name="LoginBackround" width="1080" height="1920"/>
         <image name="signinbtn" width="1080" height="200"/>
     </resources>
