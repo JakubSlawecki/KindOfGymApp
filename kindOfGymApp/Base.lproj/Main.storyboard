@@ -51,6 +51,9 @@
                                     <constraint firstAttribute="height" constant="50" id="lAi-6D-wiw"/>
                                 </constraints>
                                 <state key="normal" image="signinbtn"/>
+                                <connections>
+                                    <action selector="signInPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3iB-bc-7Uy"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="if you have not logged in before, the account will be automatically created" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLa-7b-Uq1">
                                 <rect key="frame" x="0.0" y="676" width="414" height="60"/>
@@ -83,7 +86,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="Tfs-zO-uXS" id="1am-Bp-8jr"/>
                         <outlet property="gifView" destination="sJ6-la-bVk" id="JtD-Ir-JOi"/>
+                        <outlet property="passwordTextField" destination="E1b-fN-ZWA" id="Tao-0l-ylk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
