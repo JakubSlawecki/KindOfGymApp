@@ -16,13 +16,14 @@ class ShowSplashScreen: UIViewController {
 
         hiGifView.loadGif(name: "HiScreenBackground")
         
-        perform(Selector(("showChooseVC")), with: nil, afterDelay: 3)  // show chooseVC after 3 seconds
+        perform(#selector(performSegueAfterDeley), with: nil, afterDelay: 3)
         
     }
     
     
     
-    func showChooseVC() {
+    
+    @objc func performSegueAfterDeley() {
         performSegue(withIdentifier: "ShowChooseVC", sender: self)
     }
 

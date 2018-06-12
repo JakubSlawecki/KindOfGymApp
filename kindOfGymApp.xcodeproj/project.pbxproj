@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0614B7D22FD01A8C50E9F26E /* Pods_kindOfGymApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0689008F5082105BF7C82B89 /* Pods_kindOfGymApp.framework */; };
+		231F3DE120CFADCB00974BFC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231F3DE020CFADCB00974BFC /* Constants.swift */; };
+		2326BFF720CFBA2B002B5E2E /* SwiftKeychainWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2326BFF820CFBA2B002B5E2E /* SwiftKeychainWrapper.framework */; };
+		2326BFFA20CFC627002B5E2E /* ChooseTrainingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2326BFF920CFC627002B5E2E /* ChooseTrainingVC.swift */; };
+		2326BFFC20CFC696002B5E2E /* chooseyouttrainingbackground.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2326BFFB20CFC695002B5E2E /* chooseyouttrainingbackground.gif */; };
 		2389A11820CEF12600F7DE7F /* SwiftGIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2389A11720CEF12600F7DE7F /* SwiftGIF.swift */; };
 		2389A11A20CEF16700F7DE7F /* LoginBackround.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2389A11920CEF16700F7DE7F /* LoginBackround.gif */; };
 		2389A11C20CEF7ED00F7DE7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2389A11B20CEF7ED00F7DE7F /* GoogleService-Info.plist */; };
@@ -24,6 +28,10 @@
 /* Begin PBXFileReference section */
 		0689008F5082105BF7C82B89 /* Pods_kindOfGymApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kindOfGymApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B6FEF3CD02217FABCCA7AC /* Pods-kindOfGymApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kindOfGymApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kindOfGymApp/Pods-kindOfGymApp.debug.xcconfig"; sourceTree = "<group>"; };
+		231F3DE020CFADCB00974BFC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2326BFF820CFBA2B002B5E2E /* SwiftKeychainWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftKeychainWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2326BFF920CFC627002B5E2E /* ChooseTrainingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTrainingVC.swift; sourceTree = "<group>"; };
+		2326BFFB20CFC695002B5E2E /* chooseyouttrainingbackground.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chooseyouttrainingbackground.gif; sourceTree = "<group>"; };
 		2389A11720CEF12600F7DE7F /* SwiftGIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGIF.swift; sourceTree = "<group>"; };
 		2389A11920CEF16700F7DE7F /* LoginBackround.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LoginBackround.gif; sourceTree = "<group>"; };
 		2389A11B20CEF7ED00F7DE7F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -46,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2326BFF720CFBA2B002B5E2E /* SwiftKeychainWrapper.framework in Frameworks */,
 				0614B7D22FD01A8C50E9F26E /* Pods_kindOfGymApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		231F3DDD20CFAD8700974BFC /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				231F3DE020CFADCB00974BFC /* Constants.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		2389A11D20CEFB6900F7DE7F /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +90,7 @@
 			children = (
 				239AABAA20CEAE42008D7CFD /* LoginVC.swift */,
 				2389A12020CF0F2400F7DE7F /* ShowSplashScreen.swift */,
+				2326BFF920CFC627002B5E2E /* ChooseTrainingVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -98,6 +116,7 @@
 		239AABA720CEAE42008D7CFD /* kindOfGymApp */ = {
 			isa = PBXGroup;
 			children = (
+				231F3DDD20CFAD8700974BFC /* Util */,
 				2389A11D20CEFB6900F7DE7F /* Model */,
 				2389A11F20CEFB7800F7DE7F /* Controller */,
 				2389A11E20CEFB7000F7DE7F /* View */,
@@ -108,6 +127,7 @@
 				239AABB420CEAE42008D7CFD /* Info.plist */,
 				2389A11B20CEF7ED00F7DE7F /* GoogleService-Info.plist */,
 				2389A11720CEF12600F7DE7F /* SwiftGIF.swift */,
+				2326BFFB20CFC695002B5E2E /* chooseyouttrainingbackground.gif */,
 				2389A12220CF0FD300F7DE7F /* HiScreenBackground.gif */,
 				2389A11920CEF16700F7DE7F /* LoginBackround.gif */,
 				2389A12620CF1D6400F7DE7F /* kindOfGymApp.entitlements */,
@@ -127,6 +147,7 @@
 		9CC910C176A26827FA72FA2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2326BFF820CFBA2B002B5E2E /* SwiftKeychainWrapper.framework */,
 				0689008F5082105BF7C82B89 /* Pods_kindOfGymApp.framework */,
 			);
 			name = Frameworks;
@@ -204,6 +225,7 @@
 				239AABB320CEAE42008D7CFD /* LaunchScreen.storyboard in Resources */,
 				2389A11C20CEF7ED00F7DE7F /* GoogleService-Info.plist in Resources */,
 				239AABB020CEAE42008D7CFD /* Assets.xcassets in Resources */,
+				2326BFFC20CFC696002B5E2E /* chooseyouttrainingbackground.gif in Resources */,
 				239AABAE20CEAE42008D7CFD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,6 +242,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-kindOfGymApp/Pods-kindOfGymApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -227,6 +250,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -280,6 +304,8 @@
 				239AABAB20CEAE42008D7CFD /* LoginVC.swift in Sources */,
 				2389A12520CF16FD00F7DE7F /* TextField.swift in Sources */,
 				239AABA920CEAE42008D7CFD /* AppDelegate.swift in Sources */,
+				231F3DE120CFADCB00974BFC /* Constants.swift in Sources */,
+				2326BFFA20CFC627002B5E2E /* ChooseTrainingVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

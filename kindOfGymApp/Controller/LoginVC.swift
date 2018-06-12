@@ -8,6 +8,9 @@
 
 import UIKit
 import Firebase
+import SwiftKeychainWrapper
+
+
 
 class LoginVC: UIViewController {
     @IBOutlet weak var gifView: UIImageView!  //outlet for login background Animation
@@ -19,30 +22,13 @@ class LoginVC: UIViewController {
         super.viewDidLoad()
         gifView.loadGif(name: "LoginBackround") // animation in the background
         
-        
-        
-        
-        
     }
     
-    
-//    func firebaseAuth(_ credential: AuthCredential) {
-//
-//        Auth.auth().signIn(with: credential, completion: { (user, error) in
-//            if error != nil {
-//
-//                print("Jakub: Unable to auth with Firebase -\(String(describing: error))")
-//            } else {
-//
-//                print("Jakub: Successfully authenticated with Firebase")
-//                if let user = user {
-//
-//                    let userData = ["provider": credential.provider]
-//                    //self.completeSignIN(id: user.uid, userData: userData) // it saves id to keychain
-//                }
-//            }
-//        })
-//    }
+    override func viewDidAppear(_ animated: Bool) {
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
+            performSegue(withIdentifier: "ShowSplashScreenVC", sender: nil)       // if there is an uid in keychain then it will do Segue to -ShowSplashScreen
+        }
+    }
 
     
 
@@ -51,12 +37,22 @@ class LoginVC: UIViewController {
             Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
                 if error == nil {
                     print("Jakub: Email User authenticated with Firebase")
+                    if let user = user {
+                        
+                        let userData = ["provider": user.providerID]
+                        self.completeSignIN(id: user.uid, userData: userData) // save that id to keychain
+                    }
                 } else {
                     Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
                         if error != nil {
                             print("Jakub: Unable to authenticate with Firebase using email")
                         } else {
                             print("Jakub: Successfully authenticated with Firebase")
+                            if let user = user {
+                                
+                                let userData = ["provider": user.providerID]
+                                self.completeSignIN(id: user.uid, userData: userData) // save that id to keychain
+                            }
                         }
                     })
                 }
@@ -64,5 +60,41 @@ class LoginVC: UIViewController {
         }
     }
     
+    func completeSignIN(id: String, userData: Dictionary<String, String>) {
+    
+    //DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
+    let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
+    print("Jakub: Data saved to keychain \(keychainResult)")
+    performSegue(withIdentifier: "ShowSplashScreenVC", sender: nil)
+    }
+    
+    @IBAction func unwindToVC1(segue:UIStoryboardSegue) { } 
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
