@@ -26,7 +26,6 @@ class ChooseTrainingVC: UIViewController {
         let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
         print("Jakub: ID removed from keychain \(keychainResult)")
         try! Auth.auth().signOut()
-        //self.dismiss(animated: true, completion: nil)
-        //performSegue(withIdentifier: "", sender: nil)
+        performSegue(withIdentifier: "unwindSegueToVC1", sender: self)
     }
 }

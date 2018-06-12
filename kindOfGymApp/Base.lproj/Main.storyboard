@@ -65,7 +65,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.039215686270000001" green="0.047058823530000002" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1VJ-Qz-pSp" secondAttribute="trailing" constant="50" id="36C-hn-Ggt"/>
                             <constraint firstItem="sJ6-la-bVk" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="8At-cO-r0E"/>
@@ -89,7 +89,7 @@
                         <outlet property="emailTextField" destination="Tfs-zO-uXS" id="1am-Bp-8jr"/>
                         <outlet property="gifView" destination="sJ6-la-bVk" id="JtD-Ir-JOi"/>
                         <outlet property="passwordTextField" destination="E1b-fN-ZWA" id="Tao-0l-ylk"/>
-                        <segue destination="e1D-kx-cBn" kind="show" identifier="ShowSplashScreenVC" id="fcI-VN-nah"/>
+                        <segue destination="e1D-kx-cBn" kind="show" identifier="ShowSplashScreenVC" action="showDetailViewController:sender:" id="fcI-VN-nah"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -108,7 +108,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="u6d-ow-R90" firstAttribute="trailing" secondItem="xKy-iB-7le" secondAttribute="trailing" id="MR3-pB-IsB"/>
                             <constraint firstItem="u6d-ow-R90" firstAttribute="top" secondItem="eVF-Cb-41l" secondAttribute="top" id="ZKb-uf-wCd"/>
@@ -148,7 +148,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vHL-y8-6eT" firstAttribute="trailing" secondItem="1HG-fk-AlL" secondAttribute="trailing" id="1Py-Ax-Vfd"/>
                             <constraint firstItem="Sbx-6f-vDO" firstAttribute="bottom" secondItem="1HG-fk-AlL" secondAttribute="bottom" id="fWV-VD-pxA"/>
@@ -162,9 +162,11 @@
                     </view>
                     <connections>
                         <outlet property="gifView" destination="vHL-y8-6eT" id="u5o-1c-Tjx"/>
+                        <segue destination="0uN-cp-Gki" kind="unwind" identifier="unwindSegueToVC1" unwindAction="unwindToVC1WithSegue:" id="alb-jd-dMf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lBX-IJ-9Xi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="0uN-cp-Gki" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1621.7391304347827" y="127.98913043478262"/>
         </scene>
