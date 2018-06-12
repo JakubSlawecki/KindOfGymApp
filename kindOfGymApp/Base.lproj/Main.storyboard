@@ -147,14 +147,63 @@
                                     <action selector="signOutBtnPressed:" destination="7Zb-Ka-fee" eventType="touchUpInside" id="xMC-uo-tdM"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xLq-IO-lGv">
+                                <rect key="frame" x="22" y="240.66666666666663" width="370" height="255"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jX7-uH-j5d" userLabel="chestAndTricepsBtn">
+                                        <rect key="frame" x="0.0" y="0.0" width="370" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Lbe-tb-szu"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="chestandTricepsBTN"/>
+                                        <connections>
+                                            <segue destination="ssu-iV-ppQ" kind="show" id="Jwe-ct-qGq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pW5-pE-CAf" userLabel="backAndBicepsBtn">
+                                        <rect key="frame" x="0.0" y="65.000000000000028" width="370" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="0fc-ic-tHq"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="backandbicBTN"/>
+                                        <connections>
+                                            <segue destination="HMq-py-gvb" kind="show" id="9WX-mf-NcB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WyI-gn-Cba" userLabel="LegsBtn">
+                                        <rect key="frame" x="0.0" y="130.00000000000003" width="370" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="koB-Kk-6Z3"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="quadsandhamBTN"/>
+                                        <connections>
+                                            <segue destination="fvC-St-5qa" kind="show" id="ukO-D4-p8i"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3W-Yy-p53" userLabel="ShouldersBtn">
+                                        <rect key="frame" x="0.0" y="195.00000000000003" width="370" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="eYs-ln-3hj"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="shouldersBTN"/>
+                                        <connections>
+                                            <segue destination="sKf-50-lAf" kind="show" id="ma2-DL-Snn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vHL-y8-6eT" firstAttribute="trailing" secondItem="1HG-fk-AlL" secondAttribute="trailing" id="1Py-Ax-Vfd"/>
+                            <constraint firstItem="xLq-IO-lGv" firstAttribute="leading" secondItem="1HG-fk-AlL" secondAttribute="leading" constant="22" id="7US-Dr-8SA"/>
+                            <constraint firstItem="xLq-IO-lGv" firstAttribute="centerY" secondItem="3I3-2k-u2W" secondAttribute="centerY" id="UGP-Fp-HWd"/>
                             <constraint firstItem="Sbx-6f-vDO" firstAttribute="bottom" secondItem="1HG-fk-AlL" secondAttribute="bottom" id="fWV-VD-pxA"/>
                             <constraint firstItem="vHL-y8-6eT" firstAttribute="bottom" secondItem="1HG-fk-AlL" secondAttribute="bottom" id="gQy-CE-ct6"/>
+                            <constraint firstAttribute="trailing" secondItem="xLq-IO-lGv" secondAttribute="trailing" constant="22" id="hYA-so-nlb"/>
                             <constraint firstItem="vHL-y8-6eT" firstAttribute="leading" secondItem="1HG-fk-AlL" secondAttribute="leading" id="oRG-02-3hZ"/>
                             <constraint firstItem="vHL-y8-6eT" firstAttribute="top" secondItem="3I3-2k-u2W" secondAttribute="top" id="q5Q-Pj-ZHG"/>
+                            <constraint firstItem="xLq-IO-lGv" firstAttribute="centerX" secondItem="3I3-2k-u2W" secondAttribute="centerX" id="qYv-DU-PfH"/>
                             <constraint firstItem="Sbx-6f-vDO" firstAttribute="leading" secondItem="1HG-fk-AlL" secondAttribute="leading" constant="50" id="qgt-Ht-q3S"/>
                             <constraint firstItem="1HG-fk-AlL" firstAttribute="trailing" secondItem="Sbx-6f-vDO" secondAttribute="trailing" constant="50" id="t4R-O8-ZZa"/>
                         </constraints>
@@ -170,12 +219,189 @@
             </objects>
             <point key="canvasLocation" x="1621.7391304347827" y="127.98913043478262"/>
         </scene>
+        <!--Back And BicepsVC-->
+        <scene sceneID="WAg-U4-SP5">
+            <objects>
+                <viewController id="HMq-py-gvb" customClass="BackAndBicepsVC" customModule="kindOfGymApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WJK-RB-ZyO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backAndBicepsVCbackground" translatesAutoresizingMaskIntoConstraints="NO" id="OPL-Lf-dco">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8Z-kz-ebP">
+                                <rect key="frame" x="374" y="676" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="1xF-RL-x9c"/>
+                                    <constraint firstAttribute="height" constant="40" id="WNi-Gs-NYW"/>
+                                </constraints>
+                                <state key="normal" image="backBtn2"/>
+                                <connections>
+                                    <action selector="backBtnPressed:" destination="HMq-py-gvb" eventType="touchUpInside" id="NNo-ZI-y99"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.039215686270000001" green="0.047058823530000002" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="p8Z-kz-ebP" secondAttribute="bottom" constant="20" id="2YX-9f-20B"/>
+                            <constraint firstItem="OPL-Lf-dco" firstAttribute="trailing" secondItem="BNa-sV-J2g" secondAttribute="trailing" id="BSV-oS-sny"/>
+                            <constraint firstAttribute="trailing" secondItem="p8Z-kz-ebP" secondAttribute="trailing" id="X4N-8e-ZAv"/>
+                            <constraint firstItem="OPL-Lf-dco" firstAttribute="bottom" secondItem="BNa-sV-J2g" secondAttribute="bottom" id="e53-ZB-kGD"/>
+                            <constraint firstItem="OPL-Lf-dco" firstAttribute="top" secondItem="WJK-RB-ZyO" secondAttribute="top" id="lwe-JV-s93"/>
+                            <constraint firstItem="OPL-Lf-dco" firstAttribute="leading" secondItem="BNa-sV-J2g" secondAttribute="leading" id="o6q-o1-dbf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BNa-sV-J2g"/>
+                    </view>
+                    <connections>
+                        <outlet property="gifView" destination="OPL-Lf-dco" id="ajY-5B-m3X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AQH-ns-0xB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2615.9420289855075" y="-4.0760869565217392"/>
+        </scene>
+        <!--LegsVC-->
+        <scene sceneID="zC3-XG-YtU">
+            <objects>
+                <viewController id="fvC-St-5qa" customClass="LegsVC" customModule="kindOfGymApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="77y-pi-zrX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="legsVCBackground" translatesAutoresizingMaskIntoConstraints="NO" id="lYm-Iv-4cn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bq8-lk-Nze">
+                                <rect key="frame" x="374" y="676" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="6gz-3D-0pT"/>
+                                    <constraint firstAttribute="height" constant="40" id="sQV-SY-KWw"/>
+                                </constraints>
+                                <state key="normal" image="backBtn2"/>
+                                <connections>
+                                    <action selector="backBtnPressed:" destination="fvC-St-5qa" eventType="touchUpInside" id="NjG-bn-RvO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.039215686270000001" green="0.047058823530000002" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lYm-Iv-4cn" firstAttribute="top" secondItem="77y-pi-zrX" secondAttribute="top" id="9T4-E6-yUF"/>
+                            <constraint firstItem="lYm-Iv-4cn" firstAttribute="trailing" secondItem="PH2-bK-APq" secondAttribute="trailing" id="DHx-lL-Lp1"/>
+                            <constraint firstItem="lYm-Iv-4cn" firstAttribute="leading" secondItem="PH2-bK-APq" secondAttribute="leading" id="KeG-dI-VHU"/>
+                            <constraint firstAttribute="bottom" secondItem="bq8-lk-Nze" secondAttribute="bottom" constant="20" id="bCc-Py-t5A"/>
+                            <constraint firstAttribute="trailing" secondItem="bq8-lk-Nze" secondAttribute="trailing" id="det-9v-iUs"/>
+                            <constraint firstItem="lYm-Iv-4cn" firstAttribute="bottom" secondItem="PH2-bK-APq" secondAttribute="bottom" id="vCk-OC-BzL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PH2-bK-APq"/>
+                    </view>
+                    <connections>
+                        <outlet property="gifView" destination="lYm-Iv-4cn" id="nYx-ef-MDt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Vh-bK-orr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2604.3478260869565" y="659.51086956521749"/>
+        </scene>
+        <!--ShouldersVC-->
+        <scene sceneID="ysT-qL-fYA">
+            <objects>
+                <viewController id="sKf-50-lAf" customClass="ShouldersVC" customModule="kindOfGymApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U67-sH-k6t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shouldersVCBackground" translatesAutoresizingMaskIntoConstraints="NO" id="eco-RS-6es">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfW-to-VbU">
+                                <rect key="frame" x="374" y="676" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="NYk-1k-LlN"/>
+                                    <constraint firstAttribute="width" constant="40" id="bwh-Zl-OUD"/>
+                                </constraints>
+                                <state key="normal" image="backBtn2"/>
+                                <connections>
+                                    <action selector="backBtnPressed:" destination="sKf-50-lAf" eventType="touchUpInside" id="mkW-od-3Sg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.039215686270000001" green="0.047058823530000002" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="eco-RS-6es" firstAttribute="leading" secondItem="9a5-wl-nOc" secondAttribute="leading" id="3OA-c9-OvA"/>
+                            <constraint firstItem="eco-RS-6es" firstAttribute="top" secondItem="U67-sH-k6t" secondAttribute="top" id="75C-eG-E3S"/>
+                            <constraint firstItem="eco-RS-6es" firstAttribute="bottom" secondItem="9a5-wl-nOc" secondAttribute="bottom" id="HVo-Wt-QHV"/>
+                            <constraint firstItem="eco-RS-6es" firstAttribute="trailing" secondItem="9a5-wl-nOc" secondAttribute="trailing" id="dPY-kV-yiv"/>
+                            <constraint firstAttribute="trailing" secondItem="kfW-to-VbU" secondAttribute="trailing" id="o5E-mV-bBy"/>
+                            <constraint firstAttribute="bottom" secondItem="kfW-to-VbU" secondAttribute="bottom" constant="20" id="w1S-hL-LGo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9a5-wl-nOc"/>
+                    </view>
+                    <connections>
+                        <outlet property="gifView" destination="eco-RS-6es" id="C3V-az-2F2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZiN-Qi-G99" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2186" y="1317"/>
+        </scene>
+        <!--Chest And TricepsVC-->
+        <scene sceneID="UoC-pa-jBG">
+            <objects>
+                <viewController id="ssu-iV-ppQ" customClass="ChestAndTricepsVC" customModule="kindOfGymApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="haX-Cl-9av">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chestVCBackground" translatesAutoresizingMaskIntoConstraints="NO" id="d0a-OC-92W">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEZ-43-QRd">
+                                <rect key="frame" x="374" y="676" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ruc-YS-Rnn"/>
+                                    <constraint firstAttribute="width" constant="40" id="dDy-2S-Diq"/>
+                                </constraints>
+                                <state key="normal" image="backBtn2"/>
+                                <connections>
+                                    <action selector="backBtnPressed:" destination="ssu-iV-ppQ" eventType="touchUpInside" id="Rv5-8O-HbP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.039215686270000001" green="0.047058823530000002" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nvf-uA-BUH" firstAttribute="bottom" secondItem="YEZ-43-QRd" secondAttribute="bottom" constant="20" id="55b-2g-dwQ"/>
+                            <constraint firstItem="d0a-OC-92W" firstAttribute="top" secondItem="haX-Cl-9av" secondAttribute="top" id="E0q-89-jAr"/>
+                            <constraint firstItem="Nvf-uA-BUH" firstAttribute="trailing" secondItem="YEZ-43-QRd" secondAttribute="trailing" id="J8D-5T-Kb4"/>
+                            <constraint firstItem="d0a-OC-92W" firstAttribute="trailing" secondItem="Nvf-uA-BUH" secondAttribute="trailing" id="SUA-fR-R0P"/>
+                            <constraint firstItem="d0a-OC-92W" firstAttribute="leading" secondItem="Nvf-uA-BUH" secondAttribute="leading" id="qxS-tc-EJ3"/>
+                            <constraint firstItem="d0a-OC-92W" firstAttribute="bottom" secondItem="Nvf-uA-BUH" secondAttribute="bottom" id="xRg-Yt-TO9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Nvf-uA-BUH"/>
+                    </view>
+                    <connections>
+                        <outlet property="gifView" destination="d0a-OC-92W" id="EYN-C6-Kjo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Drs-ec-c13" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2277" y="-675"/>
+        </scene>
     </scenes>
     <resources>
         <image name="HiScreenBackground" width="1080" height="1920"/>
         <image name="LoginBackround" width="1080" height="1920"/>
         <image name="SignOutbtn" width="1080" height="200"/>
+        <image name="backAndBicepsVCbackground" width="1080" height="1920"/>
+        <image name="backBtn2" width="150" height="150"/>
+        <image name="backandbicBTN" width="1080" height="200"/>
+        <image name="chestVCBackground" width="1080" height="1920"/>
+        <image name="chestandTricepsBTN" width="1080" height="200"/>
         <image name="chooseyouttrainingbackground" width="1080" height="1920"/>
+        <image name="legsVCBackground" width="1080" height="1920"/>
+        <image name="quadsandhamBTN" width="1080" height="200"/>
+        <image name="shouldersBTN" width="1080" height="200"/>
+        <image name="shouldersVCBackground" width="1080" height="1920"/>
         <image name="signinbtn" width="1080" height="200"/>
     </resources>
 </document>
