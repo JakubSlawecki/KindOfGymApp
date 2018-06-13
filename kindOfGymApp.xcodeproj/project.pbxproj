@@ -20,7 +20,10 @@
 		2326C00820D05536002B5E2E /* backAndBicepsVCbackground.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2326C00720D05535002B5E2E /* backAndBicepsVCbackground.gif */; };
 		2326C00A20D05544002B5E2E /* legsVCBackground.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2326C00920D05543002B5E2E /* legsVCBackground.gif */; };
 		2326C00C20D05552002B5E2E /* shouldersVCBackground.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2326C00B20D05552002B5E2E /* shouldersVCBackground.gif */; };
-		2326C00E20D065D5002B5E2E /* LaunchScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2326C00D20D065D5002B5E2E /* LaunchScreenVC.swift */; };
+		2326C01220D17F00002B5E2E /* ChestExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2326C01120D17F00002B5E2E /* ChestExerciseCell.swift */; };
+		2326C01420D17F38002B5E2E /* BackBicepsExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2326C01320D17F38002B5E2E /* BackBicepsExerciseCell.swift */; };
+		2326C01620D17F53002B5E2E /* LegExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2326C01520D17F53002B5E2E /* LegExerciseCell.swift */; };
+		2326C01820D17F80002B5E2E /* ShoulderExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2326C01720D17F80002B5E2E /* ShoulderExerciseCell.swift */; };
 		2389A11820CEF12600F7DE7F /* SwiftGIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2389A11720CEF12600F7DE7F /* SwiftGIF.swift */; };
 		2389A11A20CEF16700F7DE7F /* LoginBackround.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2389A11920CEF16700F7DE7F /* LoginBackround.gif */; };
 		2389A11C20CEF7ED00F7DE7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2389A11B20CEF7ED00F7DE7F /* GoogleService-Info.plist */; };
@@ -49,7 +52,10 @@
 		2326C00720D05535002B5E2E /* backAndBicepsVCbackground.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = backAndBicepsVCbackground.gif; sourceTree = "<group>"; };
 		2326C00920D05543002B5E2E /* legsVCBackground.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = legsVCBackground.gif; sourceTree = "<group>"; };
 		2326C00B20D05552002B5E2E /* shouldersVCBackground.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = shouldersVCBackground.gif; sourceTree = "<group>"; };
-		2326C00D20D065D5002B5E2E /* LaunchScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenVC.swift; sourceTree = "<group>"; };
+		2326C01120D17F00002B5E2E /* ChestExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChestExerciseCell.swift; sourceTree = "<group>"; };
+		2326C01320D17F38002B5E2E /* BackBicepsExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackBicepsExerciseCell.swift; sourceTree = "<group>"; };
+		2326C01520D17F53002B5E2E /* LegExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegExerciseCell.swift; sourceTree = "<group>"; };
+		2326C01720D17F80002B5E2E /* ShoulderExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoulderExerciseCell.swift; sourceTree = "<group>"; };
 		2389A11720CEF12600F7DE7F /* SwiftGIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGIF.swift; sourceTree = "<group>"; };
 		2389A11920CEF16700F7DE7F /* LoginBackround.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LoginBackround.gif; sourceTree = "<group>"; };
 		2389A11B20CEF7ED00F7DE7F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -99,6 +105,10 @@
 			isa = PBXGroup;
 			children = (
 				2389A12420CF16FD00F7DE7F /* TextField.swift */,
+				2326C01120D17F00002B5E2E /* ChestExerciseCell.swift */,
+				2326C01320D17F38002B5E2E /* BackBicepsExerciseCell.swift */,
+				2326C01520D17F53002B5E2E /* LegExerciseCell.swift */,
+				2326C01720D17F80002B5E2E /* ShoulderExerciseCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -113,7 +123,6 @@
 				2326BFFF20D053E5002B5E2E /* BackAndBicepsVC.swift */,
 				2326C00120D0540E002B5E2E /* LegsVC.swift */,
 				2326C00320D05430002B5E2E /* ShouldersVC.swift */,
-				2326C00D20D065D5002B5E2E /* LaunchScreenVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -333,15 +342,18 @@
 				2389A11820CEF12600F7DE7F /* SwiftGIF.swift in Sources */,
 				2389A12120CF0F2400F7DE7F /* ShowSplashScreen.swift in Sources */,
 				239AABAB20CEAE42008D7CFD /* LoginVC.swift in Sources */,
+				2326C01820D17F80002B5E2E /* ShoulderExerciseCell.swift in Sources */,
+				2326C01220D17F00002B5E2E /* ChestExerciseCell.swift in Sources */,
+				2326C01420D17F38002B5E2E /* BackBicepsExerciseCell.swift in Sources */,
 				2326C00220D0540E002B5E2E /* LegsVC.swift in Sources */,
 				2326C00020D053E5002B5E2E /* BackAndBicepsVC.swift in Sources */,
 				2389A12520CF16FD00F7DE7F /* TextField.swift in Sources */,
 				2326C00420D05430002B5E2E /* ShouldersVC.swift in Sources */,
+				2326C01620D17F53002B5E2E /* LegExerciseCell.swift in Sources */,
 				239AABA920CEAE42008D7CFD /* AppDelegate.swift in Sources */,
 				231F3DE120CFADCB00974BFC /* Constants.swift in Sources */,
 				2326BFFA20CFC627002B5E2E /* ChooseTrainingVC.swift in Sources */,
 				2326BFFE20D053B2002B5E2E /* ChestAndTricepsVC.swift in Sources */,
-				2326C00E20D065D5002B5E2E /* LaunchScreenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

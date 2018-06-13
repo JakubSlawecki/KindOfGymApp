@@ -8,14 +8,31 @@
 
 import UIKit
 
-class LegsVC: UIViewController {
+class LegsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
     @IBOutlet weak var gifView: UIImageView!
+    @IBOutlet weak var tableView: UITableView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         gifView.loadGif(name: "legsVCBackground")
+        tableView.delegate = self
+        tableView.dataSource = self
 
         
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return tableView.dequeueReusableCell(withIdentifier: "LegExerciseCell") as! LegExerciseCell
     }
 
     
