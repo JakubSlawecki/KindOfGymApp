@@ -14,6 +14,7 @@ class ShoulderExerciseCell: UITableViewCell {
     @IBOutlet weak var exerciseNameLebel: UILabel!
     @IBOutlet weak var setsAndRepetitionsText: UILabel!
     @IBOutlet weak var restTimeBetweenSetsText: UILabel!
+    @IBOutlet weak var exerciseDescriptionText: UITextView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
