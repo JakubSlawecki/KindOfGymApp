@@ -19,9 +19,16 @@ class ChestAndTricepsVC: UIViewController, UITableViewDelegate, UITableViewDataS
         gifView.loadGif(name: "chestVCBackground")
         tableView.delegate = self
         tableView.dataSource = self
+        
+        // this will observe if there are changes in the database
+        DataService.ds.REF_CHEST_EXERCISES.observe(.value, with: { (snapshot) in
+            print(snapshot.value!)
+        })
+        
     
     }
 
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

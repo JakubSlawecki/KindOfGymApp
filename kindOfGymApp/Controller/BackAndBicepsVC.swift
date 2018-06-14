@@ -13,13 +13,19 @@ class BackAndBicepsVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     @IBOutlet weak var gifView: UIImageView!
     @IBOutlet weak var tableView: UITableView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         gifView.loadGif(name: "backAndBicepsVCbackground")
         tableView.delegate = self
         tableView.dataSource = self
         
+        DataService.ds.REF_BACK_BICEPS_EXERCISES.observe(.value, with: { (snapshot) in
+            print(snapshot.value!)
+        })
+        
     }
+    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
