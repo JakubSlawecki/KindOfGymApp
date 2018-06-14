@@ -24,6 +24,7 @@
 		2326C01420D17F38002B5E2E /* BackBicepsExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2326C01320D17F38002B5E2E /* BackBicepsExerciseCell.swift */; };
 		2326C01620D17F53002B5E2E /* LegExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2326C01520D17F53002B5E2E /* LegExerciseCell.swift */; };
 		2326C01820D17F80002B5E2E /* ShoulderExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2326C01720D17F80002B5E2E /* ShoulderExerciseCell.swift */; };
+		2326C01B20D28A08002B5E2E /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2326C01A20D28A08002B5E2E /* DataService.swift */; };
 		2389A11820CEF12600F7DE7F /* SwiftGIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2389A11720CEF12600F7DE7F /* SwiftGIF.swift */; };
 		2389A11A20CEF16700F7DE7F /* LoginBackround.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2389A11920CEF16700F7DE7F /* LoginBackround.gif */; };
 		2389A11C20CEF7ED00F7DE7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2389A11B20CEF7ED00F7DE7F /* GoogleService-Info.plist */; };
@@ -56,6 +57,7 @@
 		2326C01320D17F38002B5E2E /* BackBicepsExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackBicepsExerciseCell.swift; sourceTree = "<group>"; };
 		2326C01520D17F53002B5E2E /* LegExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegExerciseCell.swift; sourceTree = "<group>"; };
 		2326C01720D17F80002B5E2E /* ShoulderExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoulderExerciseCell.swift; sourceTree = "<group>"; };
+		2326C01A20D28A08002B5E2E /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		2389A11720CEF12600F7DE7F /* SwiftGIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGIF.swift; sourceTree = "<group>"; };
 		2389A11920CEF16700F7DE7F /* LoginBackround.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LoginBackround.gif; sourceTree = "<group>"; };
 		2389A11B20CEF7ED00F7DE7F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -92,6 +94,14 @@
 				231F3DE020CFADCB00974BFC /* Constants.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		2326C01920D289E2002B5E2E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2326C01A20D28A08002B5E2E /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		2389A11D20CEFB6900F7DE7F /* Model */ = {
@@ -148,6 +158,7 @@
 		239AABA720CEAE42008D7CFD /* kindOfGymApp */ = {
 			isa = PBXGroup;
 			children = (
+				2326C01920D289E2002B5E2E /* Services */,
 				231F3DDD20CFAD8700974BFC /* Util */,
 				2389A11D20CEFB6900F7DE7F /* Model */,
 				2389A11F20CEFB7800F7DE7F /* Controller */,
@@ -346,6 +357,7 @@
 				2326C01220D17F00002B5E2E /* ChestExerciseCell.swift in Sources */,
 				2326C01420D17F38002B5E2E /* BackBicepsExerciseCell.swift in Sources */,
 				2326C00220D0540E002B5E2E /* LegsVC.swift in Sources */,
+				2326C01B20D28A08002B5E2E /* DataService.swift in Sources */,
 				2326C00020D053E5002B5E2E /* BackAndBicepsVC.swift in Sources */,
 				2389A12520CF16FD00F7DE7F /* TextField.swift in Sources */,
 				2326C00420D05430002B5E2E /* ShouldersVC.swift in Sources */,

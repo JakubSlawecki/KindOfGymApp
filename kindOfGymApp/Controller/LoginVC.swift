@@ -39,8 +39,8 @@ class LoginVC: UIViewController {
                     print("Jakub: Email User authenticated with Firebase")
                     if let user = user {
                         
-                        let userData = ["provider": user.providerID]
-                        self.completeSignIN(id: user.uid, userData: userData) // save that id to keychain
+                        let userData = ["email": user.email]
+                        self.completeSignIN(id: user.uid, userData: userData as! Dictionary<String, String>) // save that id to keychain
                     }
                 } else {
                     Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
@@ -50,8 +50,8 @@ class LoginVC: UIViewController {
                             print("Jakub: Successfully authenticated with Firebase")
                             if let user = user {
                                 
-                                let userData = ["provider": user.providerID]
-                                self.completeSignIN(id: user.uid, userData: userData) // save that id to keychain
+                                let userData = ["email": user.email]
+                                self.completeSignIN(id: user.uid, userData: userData as! Dictionary<String, String>) // save that id to keychain
                             }
                         }
                     })
@@ -62,7 +62,7 @@ class LoginVC: UIViewController {
     
     func completeSignIN(id: String, userData: Dictionary<String, String>) {
     
-    //DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
+    DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
     let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
     print("Jakub: Data saved to keychain \(keychainResult)")
     performSegue(withIdentifier: "ShowSplashScreenVC", sender: nil)
