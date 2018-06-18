@@ -16,9 +16,21 @@ class ChestExerciseCell: UITableViewCell {
     @IBOutlet weak var restTimeBetweenSetsText: UILabel!
     @IBOutlet weak var exerciseDescriptionText: UITextView!
     
+    var exercise: Exercise!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    
+    func configureCell(exercise: Exercise) {
+        self.exercise = exercise
+        
+        self.exerciseNameLebel.text = exercise.nameOfExercise
+        self.setsAndRepetitionsText.text = exercise.noOfSetsAndReps
+        self.restTimeBetweenSetsText.text = exercise.restTime
+        self.exerciseDescriptionText.text = exercise.exerciseDescription
     }
 
     

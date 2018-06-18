@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import Firebase
 
 class BackAndBicepsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var gifView: UIImageView!
     @IBOutlet weak var tableView: UITableView!
+    
+    var exercises = [Exercise]()
     
     
     override func viewDidLoad() {
@@ -20,9 +23,21 @@ class BackAndBicepsVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         tableView.delegate = self
         tableView.dataSource = self
         
-        DataService.ds.REF_BACK_BICEPS_EXERCISES.observe(.value, with: { (snapshot) in
-            print(snapshot.value!)
-        })
+        DataService.ds.REF_BACK_BICEPS_EXERCISES.observe(.value) { (snapshot) in
+            if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
+                
+                for snap in snapshot {
+                    print("snap: \(snap)")
+                    if let exerciseDict = snap.value as? Dictionary<String, AnyObject> {
+                        let key = snap.key
+                        let exercise = Exercise(exerciseKey: key, exerciseData: exerciseDict)
+                        self.exercises.insert(exercise, at: 0)
+                    }
+                }
+                self.tableView.reloadData()
+            }
+        }
+        
         
     }
     
@@ -32,11 +47,18 @@ class BackAndBicepsVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return exercises.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCell(withIdentifier: "BackBicepsExerciseCell") as! BackBicepsExerciseCell
+        let exercise = exercises[indexPath.row]
+        
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "BackBicepsExerciseCell") as? BackBicepsExerciseCell {
+            cell.configureCell(exercise: exercise)
+            return cell
+        } else {
+            return BackBicepsExerciseCell()
+        }
     }
 
     

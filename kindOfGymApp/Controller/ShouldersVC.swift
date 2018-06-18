@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import Firebase
 
 class ShouldersVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var gifView: UIImageView!
     @IBOutlet weak var tableView: UITableView!
+    
+    var exercises = [Exercise]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,9 +22,21 @@ class ShouldersVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         tableView.delegate = self
         tableView.dataSource = self
 
-        DataService.ds.REF_SHOULDERS_EXERCISES.observe(.value, with: { (snapshot) in
-            print(snapshot.value!)
-        })
+        DataService.ds.REF_SHOULDERS_EXERCISES.observe(.value) { (snapshot) in
+            if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
+                
+                for snap in snapshot {
+                    print("snap: \(snap)")
+                    if let exerciseDict = snap.value as? Dictionary<String, AnyObject> {
+                        let key = snap.key
+                        let exercise = Exercise(exerciseKey: key, exerciseData: exerciseDict)
+                        self.exercises.insert(exercise, at: 0)
+                    }
+                }
+                self.tableView.reloadData()
+            }
+        }
+       
         
     }
     
@@ -31,11 +46,18 @@ class ShouldersVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return exercises.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCell(withIdentifier: "ShoulderExerciseCell") as! ShoulderExerciseCell
+        let exercise = exercises[indexPath.row]
+        
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "ShoulderExerciseCell") as? ShoulderExerciseCell {
+            cell.configureCell(exercise: exercise)
+            return cell
+        } else {
+            return ShoulderExerciseCell()
+        }
     }
 
     @IBAction func backBtnPressed(_ sender: UIButton) {
