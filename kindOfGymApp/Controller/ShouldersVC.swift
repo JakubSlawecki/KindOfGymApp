@@ -15,6 +15,7 @@ class ShouldersVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     @IBOutlet weak var tableView: UITableView!
     
     var exercises = [Exercise]()
+    static var imageCache: NSCache<NSString, UIImage> = NSCache()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +31,8 @@ class ShouldersVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
                     if let exerciseDict = snap.value as? Dictionary<String, AnyObject> {
                         let key = snap.key
                         let exercise = Exercise(exerciseKey: key, exerciseData: exerciseDict)
-                        self.exercises.insert(exercise, at: 0)
+                        //self.exercises.insert(exercise, at: 0)
+                        self.exercises.append(exercise)
                     }
                 }
                 self.tableView.reloadData()
@@ -53,8 +55,13 @@ class ShouldersVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         let exercise = exercises[indexPath.row]
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "ShoulderExerciseCell") as? ShoulderExerciseCell {
-            cell.configureCell(exercise: exercise)
-            return cell
+            if let img = ShouldersVC.imageCache.object(forKey: exercise.imageUrl as NSString) {
+                cell.configureCell(exercise: exercise, img: img)
+                return cell
+            } else {
+                cell.configureCell(exercise: exercise, img: nil)
+                return cell
+            }
         } else {
             return ShoulderExerciseCell()
         }

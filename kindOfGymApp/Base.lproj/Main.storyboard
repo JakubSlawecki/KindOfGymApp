@@ -268,7 +268,7 @@
                                                             <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="incline-barbell-bench-press" translatesAutoresizingMaskIntoConstraints="NO" id="ZC1-HO-Upb">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZC1-HO-Upb">
                                                             <rect key="frame" x="8" y="45" width="398" height="250"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="250" id="hCI-4R-Z13"/>
@@ -418,7 +418,7 @@
                                                             <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="incline-barbell-bench-press" translatesAutoresizingMaskIntoConstraints="NO" id="Qj1-ch-ZOb">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qj1-ch-ZOb">
                                                             <rect key="frame" x="8" y="45" width="398" height="250"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="250" id="DO5-7e-LC9"/>
@@ -568,7 +568,7 @@
                                                             <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="incline-barbell-bench-press" translatesAutoresizingMaskIntoConstraints="NO" id="FK2-9k-rWI">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FK2-9k-rWI">
                                                             <rect key="frame" x="8" y="45" width="398" height="250"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="250" id="uo9-rk-13i"/>
@@ -707,7 +707,7 @@
                                                             <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="incline-barbell-bench-press" translatesAutoresizingMaskIntoConstraints="NO" id="e7c-XF-ATg">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e7c-XF-ATg">
                                                             <rect key="frame" x="8" y="45" width="398" height="250"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="250" id="2ob-pE-EMk"/>
@@ -833,7 +833,6 @@
         <image name="chestVCBackground" width="1080" height="1920"/>
         <image name="chestandTricepsBTN" width="1080" height="200"/>
         <image name="chooseyouttrainingbackground" width="1080" height="1920"/>
-        <image name="incline-barbell-bench-press" width="1320" height="682"/>
         <image name="legsVCBackground" width="1080" height="1920"/>
         <image name="quadsandhamBTN" width="1080" height="200"/>
         <image name="shouldersBTN" width="1080" height="200"/>

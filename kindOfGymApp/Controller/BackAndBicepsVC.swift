@@ -15,6 +15,7 @@ class BackAndBicepsVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     @IBOutlet weak var tableView: UITableView!
     
     var exercises = [Exercise]()
+    static var imageCache: NSCache<NSString, UIImage> = NSCache()
     
     
     override func viewDidLoad() {
@@ -31,7 +32,8 @@ class BackAndBicepsVC: UIViewController, UITableViewDelegate, UITableViewDataSou
                     if let exerciseDict = snap.value as? Dictionary<String, AnyObject> {
                         let key = snap.key
                         let exercise = Exercise(exerciseKey: key, exerciseData: exerciseDict)
-                        self.exercises.insert(exercise, at: 0)
+                        //self.exercises.insert(exercise, at: 0)
+                        self.exercises.append(exercise)
                     }
                 }
                 self.tableView.reloadData()
@@ -54,8 +56,13 @@ class BackAndBicepsVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         let exercise = exercises[indexPath.row]
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "BackBicepsExerciseCell") as? BackBicepsExerciseCell {
-            cell.configureCell(exercise: exercise)
-            return cell
+            if let img = BackAndBicepsVC.imageCache.object(forKey: exercise.imageUrl as NSString) {
+                cell.configureCell(exercise: exercise, img: img)
+                return cell
+            } else {
+                cell.configureCell(exercise: exercise, img: nil)
+                return cell
+            }
         } else {
             return BackBicepsExerciseCell()
         }
