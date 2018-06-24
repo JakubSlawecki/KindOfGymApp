@@ -10,6 +10,7 @@ import UIKit
 
 class ShowSplashScreen: UIViewController {
     @IBOutlet weak var hiGifView: UIImageView!
+    @IBOutlet weak var userNameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

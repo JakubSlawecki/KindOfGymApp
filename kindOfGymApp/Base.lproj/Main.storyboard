@@ -110,18 +110,32 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HiScreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="u6d-ow-R90">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jake" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avx-Wo-GXg">
+                                <rect key="frame" x="25" y="288.66666666666669" width="364" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="EPO-0U-BDe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="avx-Wo-GXg" firstAttribute="centerX" secondItem="eVF-Cb-41l" secondAttribute="centerX" id="Jaa-ft-MwP"/>
                             <constraint firstItem="u6d-ow-R90" firstAttribute="trailing" secondItem="xKy-iB-7le" secondAttribute="trailing" id="MR3-pB-IsB"/>
+                            <constraint firstItem="xKy-iB-7le" firstAttribute="trailing" secondItem="avx-Wo-GXg" secondAttribute="trailing" constant="25" id="Osc-Vu-10A"/>
                             <constraint firstItem="u6d-ow-R90" firstAttribute="top" secondItem="eVF-Cb-41l" secondAttribute="top" id="ZKb-uf-wCd"/>
+                            <constraint firstItem="avx-Wo-GXg" firstAttribute="centerY" secondItem="eVF-Cb-41l" secondAttribute="centerY" constant="-50" id="aKP-AU-S20"/>
                             <constraint firstItem="u6d-ow-R90" firstAttribute="leading" secondItem="xKy-iB-7le" secondAttribute="leading" id="se6-um-xdH"/>
                             <constraint firstItem="u6d-ow-R90" firstAttribute="bottom" secondItem="xKy-iB-7le" secondAttribute="bottom" id="u9a-Lg-D9y"/>
+                            <constraint firstItem="avx-Wo-GXg" firstAttribute="leading" secondItem="xKy-iB-7le" secondAttribute="leading" constant="25" id="y0P-jH-QOr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xKy-iB-7le"/>
                     </view>
                     <connections>
                         <outlet property="hiGifView" destination="u6d-ow-R90" id="nMH-f3-JJM"/>
+                        <outlet property="userNameLabel" destination="avx-Wo-GXg" id="fjs-T3-Aov"/>
                         <segue destination="7Zb-Ka-fee" kind="show" identifier="ShowChooseVC" id="4u5-Jk-jr2"/>
                     </connections>
                 </viewController>
