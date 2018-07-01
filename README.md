@@ -9,7 +9,6 @@ This app is inspired by the "Big man on Campus by Steve Cook" training program. 
 
 
 
-![Alt Text](https://media.giphy.com/media/1hM7HuOVWsLCCRldVO/giphy.gif)
-
+![alt-text](https://github.com/JakubSlawecki/KindOfGymApp/blob/master/kindOfGymApp/ezgif.com-optimize.gif)
 
 
