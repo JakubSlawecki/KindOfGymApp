@@ -1,6 +1,6 @@
 # KindOfGymApp
 
-## Firebase, TableViews, Firebase authorization 
+## Firebase, TableViews, Firebase authorization, CocoaPods
 
 This app is inspired by the "Big man on Campus by Steve Cook" training program. The entire training program in your hand. To weigh as little as possible, the entire database of this app is in firebase, the application downloading data to the cache, after turning off the application, cache memory is released.
 
