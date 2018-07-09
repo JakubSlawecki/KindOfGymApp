@@ -21,16 +21,8 @@ class ShowSplashScreen: UIViewController {
         
     }
     
-    
-    
-    
     @objc func performSegueAfterDeley() {
         performSegue(withIdentifier: "ShowChooseVC", sender: self)
     }
-
-    
-    
-
-    
 
 }

@@ -40,7 +40,6 @@ class BackAndBicepsVC: UIViewController, UITableViewDelegate, UITableViewDataSou
             }
         }
         
-        
     }
     
     

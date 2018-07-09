@@ -19,8 +19,6 @@ class ChooseTrainingVC: UIViewController {
         
     }
 
-    
-    
 
     @IBAction func signOutBtnPressed(_ sender: UIButton) {
         let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)

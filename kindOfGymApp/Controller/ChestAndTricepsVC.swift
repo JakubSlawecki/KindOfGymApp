@@ -40,7 +40,6 @@ class ChestAndTricepsVC: UIViewController, UITableViewDelegate, UITableViewDataS
             }
         }
         
-    
     }
 
     
@@ -68,8 +67,6 @@ class ChestAndTricepsVC: UIViewController, UITableViewDelegate, UITableViewDataS
         }
         
     }
-    
-    
 
     @IBAction func backBtnPressed(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)

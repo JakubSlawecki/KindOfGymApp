@@ -25,7 +25,6 @@ class DataService {
     private var _REF_SHOULDERS_EXERCISES = DB_BASE.child("shouldersExercises")
     
     private var _REF_USERS = DB_BASE.child("users")
-    
     private var _REF_EXERCISE_IMAGES = STORAGE_BASE.child("exercice-pics")
     
     
@@ -58,7 +57,7 @@ class DataService {
         return _REF_EXERCISE_IMAGES
     }
     
-    func createFirebaseDBUser(uid: String, userData: Dictionary<String, String>) { // uid will be our user and userData will be the "provider"
+    func createFirebaseDBUser(uid: String, userData: Dictionary<String, String>) { // uid will be  user and userData will be the "provider"
         REF_USERS.child(uid).updateChildValues(userData)  // if the user is not in the database, firebase will create it automatically!
     }
     
